@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>Employee Management - Insert</title>
+		<style>
+			.ast{
+				color: red;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+		<script src="../js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2 class="icon icon-world">All Categories</h2>
+						<ul>
+							<li >
+								<a  href="#">Employee</a>
+								<div class="mp-level">
+									<h2 >Employee</h2>
+									<ul>
+										<li>
+											<a href="view.html">View</a>
+										</li>
+										<li >
+											<a href="insert.html">Insert</a>
+										</li>
+										<li >
+											<a href="update.html">Update</a>
+										</li>
+										<li >
+											<a href="delete.html">Delete</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li >
+								<a  href="#">Projected Schedule</a>
+								<div class="mp-level">
+									<h2 >Projected Schedule</h2>
+									<ul>
+										<li>
+											<a href="proj_sch/view.html">View</a>
+										</li>
+										<li >
+											<a href="proj_sch/insert.html">Insert</a>
+										</li>
+										<li >
+											<a href="proj_sch/update.html">Update</a>
+										</li>
+										<li >
+											<a href="proj_sch/delete.html">Delete</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li >
+								<a  href="#">Resource Allotment</a>
+								<div class="mp-level">
+									<h2 >Resource Allotment</h2>
+									<ul>
+										<li>
+											<a href="res_all/view.html">View</a>
+										</li>
+										<li >
+											<a href="res_all/insert.html">Insert</a>
+										</li>
+										<li >
+											<a href="res_all/update.html">Update</a>
+										</li>
+										<li >
+											<a href="res_all/delete.html">Delete</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<li >
+								<a  href="#">Daily log</a>
+								<div class="mp-level">
+									<h2 >Daily log</h2>
+									<ul>
+										<li >
+											<a href="daily_log/view.html"">View</a>
+										</li>
+										<li >
+											<a href="daily_log/insert.html">Insert</a>
+										</li>
+										<li >
+											<a href="daily_log/update.html">Update</a>
+										</li>
+										<li >
+											<a href="daily_log/delete.html">Delete</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- /mp-menu -->
+
+				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+					<div class="scroller-inner">
+						<!-- Top Navigation -->
+						<header class="codrops-header">
+						<img src = "../logo.png">
+						<div style="width: 60px;height: 60px;float: right;position: relative;padding: 35px;">
+							<a href="../index.php"><img src="../home.png" style="float: right;width: 50px;height: 50px"></a>
+						</div>
+							<h1>Construction site management system <span></span></h1>
+						</header>
+						<div class="content clearfix">
+							<div class="block block-40 clearfix">
+								<p><a href="#" id="trigger" class="menu-trigger">Open/Close Menu</a></p>
+							</div>
+						</div>
+						<div id="form">
+						<h3>Employee Details</h3>
+						<form method="post" action="emp_insert.php">
+							<table>
+								<tr>
+									<td>Attribute</td>
+									<td>Value</td>
+								</tr>
+								<tr>
+									<td>
+										Employee id<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="emp_id" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										First Name<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="fname" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Last Name<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="lname" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										House Number<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="house_no" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Lane<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="lane" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Area<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="area" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										City<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="city" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Date of Birth<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="date" name="dob" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Gender<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="gender" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Designation<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="designation" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Type of Salary<span class="ast">*</span>
+									</td>
+									<td>
+										<input type="text" name="tos" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Email
+									</td>
+									<td>
+										<input type="text" name="email">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Salary
+									</td>
+									<td>
+										<input type="text" name="salary">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Date of Termination
+									</td>
+									<td>
+										<input type="date" name="dot">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Hours Worked
+									</td>
+									<td>
+										<input type="text" name="hrs_w">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Hourly Rate
+									</td>
+									<td>
+										<input type="text" name="hrly_rate">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Floor Working
+									</td>
+									<td>
+										<input type="text" name="floor">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="submit" value="Done Inserting">
+									</td>
+									<td>
+										<input type="submit" value="Next">
+									</td>
+								</tr>
+							</table>
+						</form>
+						</div>
+					</div><!-- /scroller-inner -->
+				</div><!-- /scroller -->
+
+			</div><!-- /pusher -->
+		</div><!-- /container -->
+		<script src="../js/classie.js"></script>
+		<script src="../js/mlpushmenu.js"></script>
+		<script>
+			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+		</script>
+	</body>
+</html>
